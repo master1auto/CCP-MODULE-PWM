@@ -7,5 +7,5 @@ void main() {
      CCPR1 =781 ;   // CCP2 compare value is 781 for 10% duty cycle
      // configure Timer2 
      PR2 = 7811;    // Timer2  max value is (1MHz / 4*16*2kHz)-1 = 7811
-     T2CON = 0x7E;   // Timer2  prescaler 16;Timer2 ON
+     T2CON = 0x06;  // Timer2 ;Timer2 ON
   }
