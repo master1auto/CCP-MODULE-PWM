@@ -14,7 +14,7 @@ void main() {
          delay_ms(2000);
       //step(2):signal carré in cycle 10% for 2 s
          PWM2_Set_Duty(25);  // Set 25 duty for PWM2 in 10%
-         CCPR2L =25 ;       // CCP2 compare value is 25 for 10%duty cycle
+         CCPR2L =25 ;       // CCP2 compare value is 25 for 10% duty cycle
           while (1)
           {   //repeat steps
               CCPR2L = 50;   // CCP2 compare value is 50 for 80% duty cycle
