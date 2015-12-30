@@ -19,7 +19,7 @@ void main(){
          //  CCP2  is output
           TRISC.RC1 = 0;
           mypwm_init();
-          mypwm_Set_Duty;
+          mypwm_Set_Duty();
           while (1)
           {   //repeat steps
               CCPR2L = 50;   // CCP2 compare value is 50 for 80% duty cycle
