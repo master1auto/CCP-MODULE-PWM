@@ -1,7 +1,7 @@
 void mypwm_init(){
 // Initialize PWM2 module at 2KHz
   CCP2CON = 0x0C;            // PWM mode(CCP2M2,CCP2M3 active)
-  T2CON = 0x02;              // timer2 prescalar
+  T2CON = 0x02;              // timer2 prescalar 16
   PR2 = 62;                 // Timer2 max value is (8MHz / 4*16*2kHz)-1 = 62
 }
  void mypwm_Set_Duty (unsigned char duty)// the duty variable must be either 10 or 80
