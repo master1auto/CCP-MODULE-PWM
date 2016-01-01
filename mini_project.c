@@ -22,15 +22,12 @@ void main(){
           mypwm_stat();
           while (1)
           {   //repeat steps
-              mypwm_Set_Duty(10);
-              delay_ms(2000);  // 2000 ms delay
               mypwm_Set_Duty(80);
+              delay_ms(2000);  // 2000 ms delay
+              mypwm_Set_Duty(10);
               delay_ms(2000);  // 2000 ms delay
            }
     }
-
-
-   
 
 
 
