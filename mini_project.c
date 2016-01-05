@@ -8,7 +8,7 @@ void mypwm_init(){
        {
          switch (duty) {  
          case 10: CCPR2L =6; break;     // CCP2 compare value is 25 for 10%duty cycle ,set 25 duty for PWM2 in 10%
-         case 80: CCPR2L =201; break;   // CCP2 compare value is 201 for 80% duty cycle, set 201 duty for PWM2 in 80%
+         case 80: CCPR2L =50; break;   // CCP2 compare value is 201 for 80% duty cycle, set 201 duty for PWM2 in 80%
          default:CCPR2L=0;
          }
        }
